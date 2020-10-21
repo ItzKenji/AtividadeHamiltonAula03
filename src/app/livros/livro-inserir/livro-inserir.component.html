@@ -1,0 +1,23 @@
+<mat-card>
+
+  <mat-form-field>
+    <input type="text" matInput placeholder="Insira um ID" [(ngModel)]="id" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input type="text" matInput placeholder="Insira o Titulo do Livro" [(ngModel)]="titulo" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input type="text" matInput placeholder="Insira o Nome do Autor do Livro" [(ngModel)]="autor" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input type="number" matInput placeholder="Insira a Quantidade de Paginas do Livro" [(ngModel)]="nmPg" />
+  </mat-form-field>
+
+  <button color="primary" mat-raised-button (click)="onCadastrarLivro()">Cadastrar Livro!</button>
+
+</mat-card>
+
+<!-- id , titulo, autor e numeros de paginas -->
